@@ -18,7 +18,7 @@ if uploaded_file is not None:
 
     # Smart Freeze Rule-Based AI
     def smart_freeze(row):
-        if (row['Amount/Balance'] > 0.5 and
+        if (row['Amount/Balance'] > 0.8 and
             row['Time Gap'] < -500 and
             row['High Login Attempts'] == 1):
             return 1  # Fraud
